@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quản lí tuyển sinh </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">   
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        Quản lý tuyển sinh
+                    </div>
+                    <div class="card-body">
+
+                        <div class="mb-3">
+                            <label for="" class="form-label ">
+                                Điểm chuẩn
+                            </label>
+                            <input type="text" class="form-control" id="standard">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">
+                                Điểm môn thứ nhất
+                            </label>
+                            <input type="text" class="form-control" id="subject1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">
+                                Điểm môn thứ hai
+                            </label>
+                            <input type="text" class="form-control" id="subject2">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">
+                                Điểm môn thứ ba
+                            </label>
+                            <input type="text" class="form-control" id="subject3">
+                        </div>
+
+                        <div class="mb-3">
+                            <select id="location" class="form-select">
+                                <option value=""> Chọn khu vực </option>
+                                <option value="a"> Khu vực A </option>
+                                <option value="b"> Khu vực B </option>
+                                <option value="c"> Khu vực C </option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <select id="object" class="form-select">
+                                <option value=""> Chọn đối tượng </option>
+                                <option value="1"> Đối tượng 1 </option>
+                                <option value="2"> Đối tượng 2 </option>
+                                <option value="3"> Đối tượng 3 </option>
+                            </select>
+                        </div>
+
+                        <div class="text-center">
+                            <button  onclick="showResult()" class="btn btn-success">
+                                Kết quả
+                            </button>
+                        </div>
+                        
+                        <span> Kết quả: </span>
+                        <p id="result"> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script src="./QuanLiTuyenSinh.js"></script>
+</body>
+</html>
